@@ -33,19 +33,20 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        txt_code = findViewById(R.id.txt_code);
-        btn_1 = findViewById(R.id.btn_1);
-        btn_2 = findViewById(R.id.btn_2);
-        btn_3 = findViewById(R.id.btn_3);
-        btn_4 = findViewById(R.id.btn_4);
-        btn_5 = findViewById(R.id.btn_5);
-        btn_6 = findViewById(R.id.btn_6);
-        btn_7 = findViewById(R.id.btn_7);
-        btn_8 = findViewById(R.id.btn_8);
-        btn_9 = findViewById(R.id.btn_9);
-        btn_0 = findViewById(R.id.btn_0);
-        btn_back = findViewById(R.id.btn_back);
-        btn_open = findViewById(R.id.btn_open);
+        txt_code = findViewById(R.id.text_view);
+        btn_1 = findViewById(R.id.button_1);
+        btn_2 = findViewById(R.id.button_2);
+        btn_3 = findViewById(R.id.button_3);
+        btn_4 = findViewById(R.id.button_4);
+        btn_5 = findViewById(R.id.button_5);
+        btn_6 = findViewById(R.id.button_6);
+        btn_7 = findViewById(R.id.button_7);
+        btn_8 = findViewById(R.id.button_8);
+        btn_9 = findViewById(R.id.button_9);
+        btn_0 = findViewById(R.id.button_0);
+        btn_open = findViewById(R.id.button_open);
+        btn_back = findViewById(R.id.button_back);
+
     }
 
     private void setText(int n){
@@ -133,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String oldText = txt_code.getText().toString();
                 if(oldText.equals(code)){
-                    Intent intent = new Intent(getApplicationContext(), WelcomeActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), WelcmeActivity.class);
                     startActivity(intent);
                 } else {
                     Toast.makeText(MainActivity.this, "Wrong Key", Toast.LENGTH_SHORT).show();
