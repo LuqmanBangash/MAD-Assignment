@@ -65,61 +65,71 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 setText(1);
             }
-        });
+        }
+        );
         btn_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setText(2);
             }
-        });
+        }
+        );
         btn_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setText(3);
             }
-        });
+        }
+        );
         btn_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setText(4);
             }
-        });
+        }
+        );
         btn_5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setText(5);
             }
-        });
+        }
+        );
         btn_6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setText(6);
             }
-        });
+        }
+        );
         btn_7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setText(7);
             }
-        });
+        }
+        );
         btn_8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setText(8);
             }
-        });
+        }
+        );
         btn_9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setText(9);
             }
-        });
+        }
+        );
         btn_0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setText(0);
             }
-        });
+        }
+        );
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -128,7 +138,8 @@ public class MainActivity extends AppCompatActivity {
                     txt_code.setText(oldText.substring(0, oldText.length() - 1));
                 }
             }
-        });
+        }
+        );
         btn_open.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -137,9 +148,10 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), WelcmeActivity.class);
                     startActivity(intent);
                 } else {
-                    Toast.makeText(MainActivity.this, "Wrong Key", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Invalid Key", Toast.LENGTH_SHORT).show();
                 }
             }
-        });
+        }
+        );
     }
 }

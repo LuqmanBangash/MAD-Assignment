@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".WelcmeActivity">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="138dp"
+        android:layout_height="30dp"
+        android:text="Welcome"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="43dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
