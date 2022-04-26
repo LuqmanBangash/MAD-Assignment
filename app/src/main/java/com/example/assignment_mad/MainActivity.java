@@ -10,7 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private String code = "1234";
+    private String code = "0007";
     private TextView txt_code;
     private Button btn_1;
     private Button btn_2;
